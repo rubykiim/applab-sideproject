@@ -1,31 +1,295 @@
-.App {
+/* Home */
+.Home {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Fredoka One', cursive;
+}
+
+.logoandbtn {
   text-align: center;
 }
 
-.header {
-  margin: 0;
-  width: 100vw;
+.logo {
   position: relative;
-  top: 10rem;
+  top: 8rem;
 }
 
-h1 {
-  margin: 0;
+a {
+    text-decoration: none;
+}
+
+.Home p {
+  margin: 0 auto;
+  font-size: 20px;
+  color: #db3e23;
+
+  position: relative;
+  top: 11em;
+  border-radius: 20px;
+  
+  background-color: #f4c5bd;
+  width: 8em;
+  padding: .5em;
+}
+
+.Home p:hover {
+  background-color: #db3e23;
+  color: #f4c5bd;
+}
+
+.Home h3 {
+  font-size: 1.4em;
+  color:rgb(204, 189, 162);
+  position: relative;
+  top: 11em;
+}
+
+span {
+  color:rgb(123, 172, 123);
+}
+
+.bCookie1 {
+    position: fixed;
+    bottom: -160px;
+    left: -190px;
+    transform-origin: center;
+    transform: rotate(13deg);
+}
+
+.bCookie2 {
+    position: fixed;
+    top: -150px;
+    right: -190px;
+    transform: scale(-1);
+    transform: rotate(195deg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .logoandbtn {
+    position: relative;
+    top: 10%;
+  }
+  .logo {
+    width: 40%;
+  }
+  .Home p {
+    top: 9em;
+    font-size: 25px;
+    width: 9em;
+  }
+  .Home h3 {
+    font-size: 2em;
+    top: 9em;
+  }
+  .bCookie1,.bCookie2 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logoandbtn {
+    position: relative;
+    top: 10%;
+  }
+  .logo {
+    width: 40%;
+  }
+  .Home p {
+    top: 9em;
+    font-size: 25px;
+    width: 7em;
+  }
+  .Home h3 {
+    font-size: 1.7em;
+    top: 9em;
+  }
+  .bCookie1,.bCookie2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .logoandbtn {
+    position: relative;
+    top: 2%;
+  }
+  .logo {
+    width: 55%;
+  }
+  .Home p {
+    top: 11em;
+    font-size: 1em;
+    width: 4em;
+  }
+  .Home h3 {
+    font-size: 1.4em;
+    padding: 0 25%;
+  }
+  .bCookie1,.bCookie2 {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .logoandbtn {
+    position: relative;
+    top: 4%;
+  }
+  .logo {
+    width: 55%;
+  }
+  .Home p {
+    top: 10em;
+    font-size: 1.1em;
+    width: 5em;
+  }
+  .Home h3 {
+    font-size: 1.5em;
+    padding: 0 28%;
+    top: 8em;
+  }
+  .bCookie1,.bCookie2 {
+    width: 100%;
+  }
+}
+
+/* SweetOptions */
+.SweetOptions {
+  text-align: center;
   font-family: 'Fredoka One', cursive;
-  font-size: 40px;
-  /* font-family: 'Baloo Bhaina', cursive; */
-  /* font-family: 'Baloo Chettan', cursive; */
-  /* font-family: 'Baloo Da', cursive; */
-  /* font-family: 'Baloo Da', cursive; */
 }
+.SweetOptions h1 {
+    font-size: 4em;
+    color: #E2644E;
+    text-align: center;
+    position: relative;
+    top: 0.5em;
+}
+.SweetOptions p {
+  background-color: #f4c5bd;
+  font-size: 20px;
+  color: #db3e23;
+  border-radius: 20px;
 
-#secondHeader {
+  margin: 0 auto;
+  padding: .5em;
   position: relative;
-  left: 4rem;
+  top: 17em;
+  width: 7em;
 }
-
-button {
+.SweetOptions p:hover {
+  background-color: #db3e23;
+  color: #f4c5bd;
+}
+.Sweets {
+  display: flex;
+  justify-content: space-around;
   position: relative;
-  top: 20rem;
+  top: 7em;
+}
+.cookie, .cake, .bubbletea, .icecream, .pastry {
+  display: flex;
+  flex-direction: column;
+  width: 12%;
+  text-align: center;
+}
+.cookie img, .cake img, .bubbletea img, .icecream img, .pastry img {
+  width: 100%;
+}
+.Sweets h3 {
+  margin: 1em auto;
+  font-family: 'Fredoka One', cursive;
+  font-size: 24px;
+  color: #ed9e91;
 }
 
+/* Cookie */
+.Cookie h3 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3.5em;
+  color: #E2644E;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.Cookie p {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3em;
+  color: #E2644E;
+  text-align: center;
+  margin: 1em auto;
+  position: relative;
+  top: 4em;
+}
+
+/* Cards */
+.Cards, .ColorCardSet {
+  font-family: 'Fredoka One', cursive;
+  text-align: center;
+  height: 100vh;
+}
+
+.Cards a {
+  text-decoration: none;
+}
+
+/* ColorCardSet */
+.ColorCardSet {
+  z-index: 0;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+  top: 18%;
+}
+
+.uppercards, .lowercards {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+
+.ColorCardSet img:nth-child(1) {
+  margin-right: 7%;
+}
+
+.shuffleBtn {
+  font-size: 20px;
+  color: #db3e23;
+
+  margin: 0 auto;
+  
+  position: relative;
+  z-index: 3;
+  bottom: 12%;  
+  
+  border-radius: 20px;
+  background-color: #f4c5bd;
+  width: 8em;
+  padding: .5em;
+}
+
+.shuffleBtn:hover {
+  background-color: #db3e23;
+  color: #f4c5bd;
+}
+
+.homeBtn {
+  color: #a5736a;
+  font-size: 1.2em;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  padding: 2.8em 0 0 3.3em;
+  z-index: 3;
+  left: 0;
+}
+
+.homeBtn h2 {
+  margin: 0;
+}

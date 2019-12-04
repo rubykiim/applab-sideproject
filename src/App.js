@@ -1,37 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
-  const [showPg, setShowPg] = useState(false);
+import Home from './components/Home';
+// import SweetOptions from './components/SweetOptions';
+// import Cookie from './components/Cookie';
+import Cards from './components/Cards'
 
-  function handleClicked() {
-    setShowPg(true);
-  }
-  
+function App() {  
   return (
-    <div className="App">
-      {!showPg && <Home onClick={handleClicked} />}
-      {showPg && <Page />}
-    </div>
-  );
-}
-
-function Home(props) {
-  return (
-    <div className="header">
-    <h1 id="firstHeader">Cookie</h1>
-    <h1 id="secondHeader">Challenge</h1>
-    <button onClick={props.onClick}>Start</button>
-  </div>
-  );
-}
-
-function Page() {
-  return (
-    <div>
-      <h1></h1>
-      <input placeholder="Enter the date" type="text"/>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        {/* <Route path="/sweetOptions" component={SweetOptions} /> */}
+        {/* <Route path="/cookie" component={Cookie} /> */}
+        <Route path="/cards" component={Cards}/>
+      </Switch>
+    </Router>
   );
 }
 
