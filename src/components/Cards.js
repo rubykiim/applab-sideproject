@@ -12,6 +12,17 @@ let colorCards ={
     purpleC: '../svgs/purplecard.svg'
 }
 
+let otherHealthyOptions = [
+    '../svgs/option1.svg',
+    '../svgs/option2.svg',
+    '../svgs/option3.svg',
+    '../svgs/option4.svg',
+    '../svgs/option5.svg',
+    '../svgs/option6.svg',
+    '../svgs/option7.svg',
+    '../svgs/option8.svg'
+]
+
 function Cards() {
     // card flip
     const [side,setSide] = useState("front");
@@ -43,6 +54,7 @@ function Cards() {
                 </div> 
             </Link> 
             <ColorCardSet click={flipCard}/>
+            {/* {otherHealthyOptions.map(makeHealthyOptions)} */}
             <p className="shuffleBtn" onClick={shuffleCards}>SHUFFLE</p>
         </div>
     );
@@ -65,10 +77,16 @@ function ColorCardSet(props) {
     );
 }
 
-function HealthyOptions() {
+function makeHealthyOptions(data) {
+    return (
+      <HealthyOptions healthyOptions={data}/>
+    );
+  }
+
+function HealthyOptions(props) {
     return(
         <div>
-            <p>v</p>
+            <img src={props.healthyOptions} alt="healthy option"/>
         </div>
     );
 }

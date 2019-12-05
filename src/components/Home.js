@@ -11,7 +11,7 @@ function Home() {
             <div>
                 <img className="logo" src={logo} alt="logo" />
             </div>
-            <Link to="/cards"><p>YES</p></Link>
+            <Link to="/cards2"><p>YES</p></Link>
             <h3>Guess your <span>Healthier Sweets</span> every day!</h3>
         </div>
             
