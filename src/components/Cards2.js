@@ -123,10 +123,10 @@ class Cards2 extends Component {
                 ref={(r) => this.flippy = r}
                 style={{ width: '225px', height: '225px'}}
             >
-                <FrontSide className="firstCard" style={{ width: '225px', height: '225px', padding: '0'}}>
+                <FrontSide className="firstCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[0]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0'}}>
+                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.GreenCard}/>
                 </BackSide>
             </Flippy>
@@ -140,10 +140,10 @@ class Cards2 extends Component {
                 ref={(r) => this.flippy = r} 
                 style={{ width: '225px', height: '225px'}}
             >
-                <FrontSide className="secondCard" style={{width: '225px', height: '225px', padding: '0'}}>
+                <FrontSide className="secondCard" style={{width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[1]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0'}}>
+                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                 <BackSideImage source={this.state.YellowCard}/>
                 </BackSide>
             </Flippy>  
@@ -158,10 +158,10 @@ class Cards2 extends Component {
                 flipDirection="horizontal" 
                 ref={(r) => this.flippy = r} 
                 style={{ width: '225px', height: '225px'}}>
-                <FrontSide className="thirdCard" style={{ width: '225px', height: '225px', padding: '0'}}>
+                <FrontSide className="thirdCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[2]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0'}}>
+                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.BlueCard}/>
                 </BackSide>
             </Flippy>   
@@ -174,10 +174,10 @@ class Cards2 extends Component {
                 flipDirection="horizontal" 
                 ref={(r) => this.flippy = r} 
                 style={{ width: '225px', height: '225px'}}>
-                <FrontSide className="fourthCard" style={{ width: '225px', height: '225px', padding: '0'}}>
+                <FrontSide className="fourthCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                  <FrontSideImage source={this.state.fronts[3]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0'}}>
+                <BackSide style={{width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.PurpleCard}/>    
                 </BackSide>
              </Flippy>
