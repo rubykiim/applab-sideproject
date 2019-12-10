@@ -154,146 +154,125 @@ span {
   }
 }
 
-/* SweetOptions */
-.SweetOptions {
-  text-align: center;
-  font-family: 'Fredoka One', cursive;
-}
-.SweetOptions h1 {
-    font-size: 4em;
-    color: #E2644E;
-    text-align: center;
-    position: relative;
-    top: 0.5em;
-}
-.SweetOptions p {
-  background-color: #f4c5bd;
-  font-size: 20px;
-  color: #db3e23;
-  border-radius: 20px;
-
-  margin: 0 auto;
-  padding: .5em;
-  position: relative;
-  top: 17em;
-  width: 7em;
-}
-.SweetOptions p:hover {
-  background-color: #db3e23;
-  color: #f4c5bd;
-}
-.Sweets {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  top: 7em;
-}
-.cookie, .cake, .bubbletea, .icecream, .pastry {
-  display: flex;
-  flex-direction: column;
-  width: 12%;
-  text-align: center;
-}
-.cookie img, .cake img, .bubbletea img, .icecream img, .pastry img {
-  width: 100%;
-}
-.Sweets h3 {
-  margin: 1em auto;
-  font-family: 'Fredoka One', cursive;
-  font-size: 24px;
-  color: #ed9e91;
+/* nav bar */
+.bm-burger-button {
+  position: absolute;
+  top: 2em;
+  right: 2em;
 }
 
-/* Cookie */
-.Cookie h3 {
-  font-family: 'Fredoka One', cursive;
-  font-size: 3.5em;
-  color: #E2644E;
-  text-align: center;
-  margin: 1em auto;
-}
+.menu {
+    background: #fbebe9;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.3em;
+    text-align: left;
 
-.Cookie p {
-  font-family: 'Fredoka One', cursive;
-  font-size: 3em;
-  color: #E2644E;
-  text-align: center;
-  margin: 1em auto;
-  position: relative;
-  top: 4em;
-}
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    
+    width: 18%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 3em;
+    padding-left: 0;
+  }
 
-/* Cards */
-.Cards, .ColorCardSet {
-  font-family: 'Fredoka One', cursive;
-  text-align: center;
-  height: 100vh;
-}
-
-.Cards a {
+.menu li{
   text-decoration: none;
+  background-color: #f4c5bd;
+  color: #e2644e;
+  padding: .5em 1em;
+  display: block;
+  margin-bottom: .6em;
+  cursor: pointer;
 }
 
-/* ColorCardSet */
-.ColorCardSet {
-  z-index: 0;
+.menu li:nth-child(1) {
+  color: #9e6d65;
+  background-color: rgb(247, 224, 207);
+}
+
+#nutritionInfo {
+  position: absolute;
+  z-index: 20;
+  top: 6.5em;
+  margin: 0 37% 0 37%;
+}
+
+/* home button */
+.homeBtn {
+    font-family: 'Fredoka One', cursive;
+    color: #a5736a;
+    font-size: 1.2em;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    padding: 0;
+    z-index: 3;
+  }
+
+.homeBtn h2 {
+    margin: 0;
+  }
+
+/* fourCards */
+.fourCards {
+    text-align: center;
 }
 
 .container {
-  width: 100vw;
-  margin: 0 auto;
-  position: relative;
-  top: 18%;
-}
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+    top: 6em;
+  }
+  
+.upperCards, .lowerCards {
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+    justify-content: center;
+  }
 
-.uppercards, .lowercards {
-  display: flex;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: center;
-  padding-bottom: 3%;
-}
+button {
+      width: 225px;
+      text-align: center;
+      border-style: none;
+      margin: 2em;
+      padding: 0;
+  }
 
-.ColorCardSet img:nth-child(1) {
-  margin-right: 7%;
-}
+.upperCards {
+      padding-bottom: 1.5%;
+  }
 
+.lowerCards {
+      text-align: center;
+  }
+
+/* shuffle button */
 .shuffleBtn {
-  font-size: 20px;
-  color: #db3e23;
-
-  margin: 0 auto;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    color: #db3e23;
   
-  position: relative;
-  z-index: 3;
-  bottom: 12%;  
+    margin: 0 auto;
+    
+    position: relative;
+    top: 2em; 
+    
+    border-radius: 20px;
+    background-color: #f4c5bd;
+    width: 8em;
+    padding: .5em;
+  }
   
-  border-radius: 20px;
-  background-color: #f4c5bd;
-  width: 8em;
-  padding: .5em;
-}
-
 .shuffleBtn:hover {
-  background-color: #db3e23;
-  color: #f4c5bd;
-}
-
-.homeBtn {
-  color: #a5736a;
-  font-size: 1.2em;
-  margin: 0;
-  position: absolute;
-  text-align: center;
-  padding: 2.8em 0 0 3.3em;
-  z-index: 3;
-  left: 0;
-}
-
-.homeBtn h2 {
-  margin: 0;
-  /* background-color: rgb(240, 212, 181);
-  border-radius: 10px;
-  padding: .2em .4em; */
-}
+    background-color: #db3e23;
+    color: #f4c5bd;
+    cursor: grab;
+  }
 

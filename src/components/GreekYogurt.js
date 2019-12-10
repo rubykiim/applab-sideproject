@@ -1,14 +1,14 @@
 import React from 'react';
-import cookie from '../svgs/n_cookie.svg';
+import greekYogurt from '../svgs/n_greekyogurt.svg';
 import HomeBtn from '../components/HomeBtn';
 
-function Cookie() {
+function GreekYogurt() {
     return(
         <div>
             <HomeBtn></HomeBtn>
-            <img src={cookie}></img>
+            <img src={greekYogurt} alt=""/>
         </div>
     );
 }
 
-export default Cookie;
+export default GreekYogurt;

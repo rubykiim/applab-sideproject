@@ -1,14 +1,14 @@
 import React from 'react';
-import cookie from '../svgs/n_cookie.svg';
+import apple from '../svgs/n_apple.svg';
 import HomeBtn from '../components/HomeBtn';
 
-function Cookie() {
+function Apple() {
     return(
         <div>
             <HomeBtn></HomeBtn>
-            <img src={cookie}></img>
+            <img src={apple} alt=""/>
         </div>
     );
 }
 
-export default Cookie;
+export default Apple;

@@ -16,8 +16,9 @@ import Option6 from '../svgs/option6.svg';
 import Option7 from '../svgs/option7.svg';
 import Option8 from '../svgs/option8.svg';
 
-import '../Cards2.css';
 import { Link } from 'react-router-dom';
+import Nav from '../components/Nav';
+import HomeBtn from '../components/HomeBtn';
 
 var Cards = [[
     Option1,
@@ -37,7 +38,7 @@ var Cards = [[
 ]
 ]
 
-class Cards2 extends Component {
+class FourCards extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -105,13 +106,13 @@ class Cards2 extends Component {
 
     render() {
         return (
-<div className="Cards2">
-    {/* homeBtn */}
-    <Link to="/"> 
-        <div className="homeBtn">
-            <h2>HOME</h2>
-        </div> 
-    </Link> 
+<div className="fourCards">
+        {/* homeBtn */}
+        <HomeBtn></HomeBtn>
+
+        {/* navStack */}
+        <Nav></Nav>        
+    
     {/* Four Cards */}
     <div className="container">
         <div className="upperCards">
@@ -182,9 +183,10 @@ class Cards2 extends Component {
                 </BackSide>
              </Flippy>
         </button>
+
         </div>
         <p className="shuffleBtn" onClick={this.cardShuffle}>SHUFFLE</p>
-    </div>
+        </div>
 </div>
         )    
     }
@@ -193,7 +195,7 @@ class Cards2 extends Component {
 function FrontSideImage(props) {
     return(
         <div>
-            <img src={props.source} alt="test"/>
+            <img src={props.source} alt="option"/>
         </div>
     );
 }
@@ -201,9 +203,9 @@ function FrontSideImage(props) {
 function BackSideImage(props) {
     return(
         <div>
-            <img src={props.source} alt="test"/>
+            <img src={props.source} alt="option"/>
         </div>
     );
 }
 
-export default Cards2;
+export default FourCards;

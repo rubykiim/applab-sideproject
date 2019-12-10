@@ -1,14 +1,14 @@
 import React from 'react';
-import cookie from '../svgs/n_cookie.svg';
+import prunes from '../svgs/n_prunes.svg';
 import HomeBtn from '../components/HomeBtn';
 
-function Cookie() {
+function Prunes() {
     return(
         <div>
             <HomeBtn></HomeBtn>
-            <img src={cookie}></img>
+            <img src={prunes} alt=""/>
         </div>
     );
 }
 
-export default Cookie;
+export default Prunes;

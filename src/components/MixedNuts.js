@@ -1,14 +1,14 @@
 import React from 'react';
-import cookie from '../svgs/n_cookie.svg';
+import mixedNuts from '../svgs/mixednuts.svg';
 import HomeBtn from '../components/HomeBtn';
 
-function Cookie() {
+function MixedNuts() {
     return(
         <div>
             <HomeBtn></HomeBtn>
-            <img src={cookie}></img>
+            <img src={mixedNuts}></img>
         </div>
     );
 }
 
-export default Cookie;
+export default MixedNuts;
