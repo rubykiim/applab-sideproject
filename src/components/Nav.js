@@ -20,7 +20,7 @@ let nutritionInfo = [
     url: apple
   },
   {
-    name: 'Prunes',
+    name: 'Prune',
     url: prunes
   },
   {
