@@ -95,12 +95,12 @@ span {
     top: 4%;
   }
   .logo {
-    width: 40%;
+    width: 35%;
   }
   .Home p {
     top: 9em;
     font-size: 25px;
-    width: 9em;
+    width: 6em;
   }
   .Home h3 {
     font-size: 2em;
@@ -304,7 +304,7 @@ button {
   @media only screen and (max-width: 1024px) {
   .fourCards {
     position: relative;
-    top: 3em;
+    top: 2em;
     }
   .container {
     top: 15em;
@@ -327,10 +327,11 @@ button {
 }
 .Home p {
   border-radius: 30px;
+  width: 7em;
 }
 .shuffleBtn {
   top: 3em; 
-  width: 10em;
+  width: 8em;
   padding: .8em;
   font-size: 1.5em;
   border-radius: 30px;
@@ -340,7 +341,7 @@ button {
 }
 #nutritionInfo img{
   position: absolute;
-  top: 13.3em;
+  top: 10em;
   left: -218px;
   text-align: unset;
   width: 450px;
@@ -356,7 +357,7 @@ button {
   @media (min-width: 1025px) and (max-width: 1366px) {
     .fourCards {
       position: relative;
-      top: 0em;
+      top: -1.5em;
       }
     .container {
       top: 8em;
@@ -379,7 +380,7 @@ button {
   }
   .shuffleBtn {
     top: 1em; 
-    width: 10em;
+    width: 8em;
     padding: .8em;
     font-size: 1.5em;
     border-radius: 30px;
