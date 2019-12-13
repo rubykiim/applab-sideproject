@@ -122,12 +122,12 @@ class FourCards extends Component {
                 isFlipped={this.state.Card1}
                 flipDirection="horizontal"
                 ref={(r) => this.flippy = r}
-                style={{ width: '225px', height: '225px'}}
+                style={{ width: '300px', height: '300px'}}
             >
-                <FrontSide className="firstCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <FrontSide className="firstCard" style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[0]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <BackSide style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.GreenCard}/>
                 </BackSide>
             </Flippy>
@@ -139,12 +139,12 @@ class FourCards extends Component {
                 isFlipped={this.state.Card2}
                 flipDirection="horizontal" 
                 ref={(r) => this.flippy = r} 
-                style={{ width: '225px', height: '225px'}}
+                style={{ width: '300px', height: '300px'}}
             >
-                <FrontSide className="secondCard" style={{width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <FrontSide className="secondCard" style={{width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[1]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <BackSide style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                 <BackSideImage source={this.state.YellowCard}/>
                 </BackSide>
             </Flippy>  
@@ -158,11 +158,11 @@ class FourCards extends Component {
                 isFlipped={this.state.Card3}
                 flipDirection="horizontal" 
                 ref={(r) => this.flippy = r} 
-                style={{ width: '225px', height: '225px'}}>
-                <FrontSide className="thirdCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                style={{ width: '300px', height: '300px'}}>
+                <FrontSide className="thirdCard" style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <FrontSideImage source={this.state.fronts[2]}/>
                 </FrontSide>
-                <BackSide style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <BackSide style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.BlueCard}/>
                 </BackSide>
             </Flippy>   
@@ -174,11 +174,11 @@ class FourCards extends Component {
                 isFlipped={this.state.Card4}
                 flipDirection="horizontal" 
                 ref={(r) => this.flippy = r} 
-                style={{ width: '225px', height: '225px'}}>
-                <FrontSide className="fourthCard" style={{ width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                style={{ width: '300px', height: '300px'}}>
+                <FrontSide className="fourthCard" style={{ width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                  <FrontSideImage source={this.state.fronts[3]}/>
                 </FrontSide>
-                <BackSide style={{width: '225px', height: '225px', padding: '0', cursor: "grab"}}>
+                <BackSide style={{width: '300px', height: '300px', padding: '0', cursor: "grab"}}>
                     <BackSideImage source={this.state.PurpleCard}/>    
                 </BackSide>
              </Flippy>
@@ -194,7 +194,7 @@ class FourCards extends Component {
 
 function FrontSideImage(props) {
     return(
-        <div>
+        <div className="fSide">
             <img src={props.source} alt="option"/>
         </div>
     );
@@ -202,7 +202,7 @@ function FrontSideImage(props) {
 
 function BackSideImage(props) {
     return(
-        <div>
+        <div className="bSide">
             <img src={props.source} alt="option"/>
         </div>
     );

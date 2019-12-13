@@ -65,10 +65,34 @@ span {
     transform: rotate(195deg);
 }
 
+/* iPad landing pg Vertical */
 @media only screen and (max-width: 1024px) {
   .logoandbtn {
     position: relative;
     top: 10%;
+  }
+  .logo {
+    width: 45%;
+  }
+  .Home p {
+    top: 9em;
+    font-size: 25px;
+    width: 9em;
+  }
+  .Home h3 {
+    font-size: 2em;
+    top: 9em;
+  }
+  .bCookie1,.bCookie2 {
+    width: 50%;
+  }
+}
+
+/* iPad landing pg horizontal */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .logoandbtn {
+    position: relative;
+    top: 4%;
   }
   .logo {
     width: 40%;
@@ -83,7 +107,7 @@ span {
     top: 9em;
   }
   .bCookie1,.bCookie2 {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -256,7 +280,7 @@ button {
 .shuffleBtn {
     text-align: center;
     font-family: 'Fredoka One', cursive;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #db3e23;
   
     margin: 0 auto;
@@ -276,3 +300,107 @@ button {
     cursor: grab;
   }
 
+/* iPad card pg vertical */
+  @media only screen and (max-width: 1024px) {
+  .fourCards {
+    position: relative;
+    top: 3em;
+    }
+  .container {
+    top: 15em;
+  }
+  .fSide img,.bSide img {
+    width: 300px;
+  }
+  .upperCards, .lowerCards {
+    width: auto;
+    margin: 0 auto;
+  }
+  .upperCards {
+    padding-bottom: 6%;
+}
+.container button {
+  width: 300px;
+  margin: 2em;
+  padding: 0;
+  background-color: white;
+}
+.Home p {
+  border-radius: 30px;
+}
+.shuffleBtn {
+  top: 3em; 
+  width: 10em;
+  padding: .8em;
+  font-size: 1.5em;
+  border-radius: 30px;
+}
+.homeBtn {
+  font-size: 2em;
+}
+#nutritionInfo img{
+  position: absolute;
+  top: 13.3em;
+  left: -218px;
+  text-align: unset;
+  width: 450px;
+}
+.bm-burger-button {
+  width: 4em;
+  top: 5em;
+  right: 3.5em;
+}
+  }
+
+/* iPad card pg horizontal */
+  @media (min-width: 1025px) and (max-width: 1366px) {
+    .fourCards {
+      position: relative;
+      top: 0em;
+      }
+    .container {
+      top: 8em;
+    }
+    .fSide img,.bSide img {
+      width: 300px;
+    }
+    .upperCards, .lowerCards {
+      width: auto;
+      margin: 0 auto;
+    }
+    .upperCards {
+      padding-bottom: 6%;
+  }
+  .container button {
+    width: 300px;
+    margin: 2em;
+    padding: 0;
+    background-color: white;
+  }
+  .shuffleBtn {
+    top: 1em; 
+    width: 10em;
+    padding: .8em;
+    font-size: 1.5em;
+    border-radius: 30px;
+  }
+  .homeBtn {
+    font-size: 2em;
+  }
+  .Home p {
+    border-radius: 30px;
+  }
+  #nutritionInfo img{
+    position: absolute;
+    top: 5em;
+    left: -170px;
+    text-align: unset;
+    width: 450px;
+  }
+  .bm-burger-button {
+    width: 4em;
+    top: 5em;
+    right: 3.5em;
+  }
+    }
+  

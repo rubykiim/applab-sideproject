@@ -61,10 +61,9 @@ function Nav() {
       
         {image && image.url && (<div id="nutritionInfo"><img src={image.url} alt="asdf"/></div>)}
         
-      <Menu styles={styles} right 
-      customBurgerIcon={ <img className="navStack" src={navStack} alt="burger icon"/> }
+      <Menu className="menu" styles={styles} right 
+      customBurgerIcon={ <img src={navStack} alt="burger icon"/> }
       customCrossIcon={ <img src={exit} /> }
-      className="menu"
       onStateChange={handleStateChange}
       >
 
