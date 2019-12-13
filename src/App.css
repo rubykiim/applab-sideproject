@@ -357,7 +357,7 @@ button {
   @media (min-width: 1025px) and (max-width: 1366px) {
     .fourCards {
       position: relative;
-      top: -1.5em;
+      top: -2.5em;
       }
     .container {
       top: 8em;
@@ -379,7 +379,7 @@ button {
     background-color: white;
   }
   .shuffleBtn {
-    top: 1.5em; 
+    top: 1em; 
     width: 8em;
     padding: .8em;
     font-size: 1.5em;
