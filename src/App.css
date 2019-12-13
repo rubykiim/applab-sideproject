@@ -360,7 +360,7 @@ button {
       top: -1.5em;
       }
     .container {
-      top: 8em;
+      top: 10em;
     }
     .fSide img,.bSide img {
       width: 300px;
@@ -370,7 +370,7 @@ button {
       margin: 0 auto;
     }
     .upperCards {
-      padding-bottom: 6%;
+      padding-bottom: 1.5%;
   }
   .container button {
     width: 300px;
@@ -379,7 +379,7 @@ button {
     background-color: white;
   }
   .shuffleBtn {
-    top: 1em; 
+    top: 1.5em; 
     width: 8em;
     padding: .8em;
     font-size: 1.5em;
