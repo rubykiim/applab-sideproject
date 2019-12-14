@@ -65,6 +65,30 @@ span {
     transform: rotate(195deg);
 }
 
+/* Macbook Pro High Res landing pg */
+@media only screen and (min-width: 1441px) and (max-width: 1680px) {
+  .logoandbtn {
+    position: relative;
+    top: 3%;
+  }
+  .logo {
+    width: 25%;
+  }
+  .Home p {
+    top: 9em;
+    font-size: 25px;
+    width: 6em;
+    border-radius: 30px;
+  }
+  .Home h3 {
+    font-size: 2em;
+    top: 9em;
+  }
+  .bCookie1,.bCookie2 {
+    width: 30%;
+  }
+}
+
 /* iPad landing pg Vertical */
 @media only screen and (max-width: 1024px) {
   .logoandbtn {
@@ -192,12 +216,10 @@ span {
     text-align: left;
 
     position: absolute;
-    z-index: 5;
     top: 0;
     right: 0;
-    
-    width: 18%;
-    height: 100vh;
+  
+    width: 100%;
     margin: 0;
     padding-top: 3em;
     padding-left: 0;
@@ -253,6 +275,10 @@ span {
     top: 6em;
   }
   
+.container button {
+    background-color: #fdf3f2;
+  }
+
 .upperCards, .lowerCards {
     display: flex;
     width: 45%;
@@ -271,6 +297,11 @@ button {
 .upperCards {
       padding-bottom: 1.5%;
   }
+
+.fSide,.bSide {
+  width: auto;
+  height: 225px;
+}
 
 .lowerCards {
       text-align: center;
@@ -300,14 +331,223 @@ button {
     cursor: grab;
   }
 
-/* iPad card pg vertical */
-  @media only screen and (max-width: 1024px) {
+  /* iPhone6/7/8 card vertical */
+  @media only screen and (max-width: 375px) and  (min-height: 660px) and (max-height: 667px) {
+    .fourCards {
+      position: relative;
+      top: 2em;
+      }
+    .container {
+      top: 7em;
+    }
+    .fSide,.bSide {
+      height: 145px;
+    }
+    .fSide img,.bSide img {
+      width: 145px;
+    }
+    .upperCards, .lowerCards {
+      width: auto;
+      margin: 0 auto;
+    }
+    .upperCards {
+      padding-bottom: 3%;
+  }
+  .container button {
+    width: 145px;
+    margin: 1.5em;
+    padding: 0;
+  }
+  .Home p {
+    border-radius: 30px;
+    width: 7em;
+  }
+  .shuffleBtn {
+    top: 3em; 
+    width: 6em;
+    padding: .8em;
+    font-size: 1em;
+    border-radius: 30px;
+  }
+  .homeBtn {
+    font-size: 1.3em;
+    top: 1em;
+    left: 1em;
+  }
+  #nutritionInfo img{
+    position: absolute;
+    top: 10em;
+    left: -218px;
+    text-align: unset;
+    width: 300px;
+  }
+  .bm-burger-button {
+    width: 2em;
+    top: 1.8em;
+    right: 1.2em;
+  }
+  .menu {
+    font-size: 1em;
+    width: 51%;
+  }
+  #nutritionInfo img{
+    position: absolute;
+    top: 1.5em;
+    left: -120px;
+    text-align: unset;
+    width: 190px;
+  }  
+    }
+  
+  /* iPhone 6/7/8+ card vertical */
+  @media only screen and (min-width: 376px) and  (max-width: 414px) and (max-height: 736px) {
+      .fourCards {
+        position: relative;
+        top: 3em;
+        }
+      .container {
+        top: 9em;
+      }
+      .fSide, .bSide {
+        height: 145px;
+      }
+      .fSide img,.bSide img {
+        width: 145px;
+      }
+      .upperCards, .lowerCards {
+        width: auto;
+        margin: 0 auto;
+      }
+      .upperCards {
+        padding-bottom: 3%;
+    }
+    .container button {
+      width: 145px;
+      margin: 1.5em;
+      padding: 0;
+    }
+    .Home p {
+      border-radius: 30px;
+      width: 7em;
+    }
+    .shuffleBtn {
+      top: 4em; 
+      width: 6em;
+      padding: .8em;
+      font-size: 1em;
+      border-radius: 30px;
+    }
+    .homeBtn {
+      font-size: 1.3em;
+      top: 1em;
+      left: 1em;
+    }
+    #nutritionInfo img{
+      position: absolute;
+      top: 10em;
+      left: -218px;
+      text-align: unset;
+      width: 300px;
+    }
+    .bm-burger-button {
+      width: 2em;
+      top: 1.8em;
+      right: 1.2em;
+    }
+    .menu {
+      font-size: 1em;
+      width: 51%;
+    }
+    #nutritionInfo img{
+      position: absolute;
+      top: 1.5em;
+      left: -127px;
+      text-align: unset;
+      width: 200px;
+    } 
+      }
+
+/* iPhoneX card vertical*/
+@media only screen and (max-width: 375px) and (min-height: 737px) and (max-height: 812px) {
+  .fourCards {
+    position: relative;
+    top: 3em;
+    }
+  .container {
+    top: 9em;
+  }
+  .fSide, .bSide {
+    width: 145px;
+    height: 145px;
+  }
+  .fSide img,.bSide img {
+    width: 145px;
+  }
+  .upperCards, .lowerCards {
+    width: auto;
+    margin: 0 auto;
+  }
+  .upperCards {
+    padding-bottom: 3%;
+}
+.container button {
+  width: 145px;
+  margin: 1.5em;
+  padding: 0;
+}
+.Home p {
+  border-radius: 30px;
+  width: 7em;
+}
+.shuffleBtn {
+  top: 4em; 
+  width: 6em;
+  padding: .8em;
+  font-size: 1em;
+  border-radius: 30px;
+}
+.homeBtn {
+  font-size: 1.3em;
+  top: 1em;
+  left: 1em;
+}
+#nutritionInfo img{
+  position: absolute;
+  top: 10em;
+  left: -218px;
+  text-align: unset;
+  width: 300px;
+}
+.bm-burger-button {
+  width: 2em;
+  top: 1.8em;
+  right: 1.2em;
+}
+.menu {
+  font-size: 1em;
+  width: 51%;
+}
+#nutritionInfo img{
+  position: absolute;
+  top: 1.5em;
+  left: -127px;
+  text-align: unset;
+  width: 200px;
+} 
+  }
+
+/* iPad Pro card pg vertical */
+  @media (min-width: 1020px) and (max-width: 1024px) and (min-height: 1025px) and (max-height: 1366px) {
   .fourCards {
     position: relative;
     top: 2em;
     }
   .container {
     top: 15em;
+  }
+  .fSide, .bSide {
+    width: 300px;
+    height: 300px;
   }
   .fSide img,.bSide img {
     width: 300px;
@@ -323,14 +563,13 @@ button {
   width: 300px;
   margin: 2em;
   padding: 0;
-  background-color: white;
 }
 .Home p {
   border-radius: 30px;
   width: 7em;
 }
 .shuffleBtn {
-  top: 3em; 
+  top: 5em; 
   width: 8em;
   padding: .8em;
   font-size: 1.5em;
@@ -353,14 +592,14 @@ button {
 }
   }
 
-/* iPad card pg horizontal */
-  @media (min-width: 1025px) and (max-width: 1366px) {
+/* iPadPro card pg horizontal */
+  @media (min-width: 1025px) and (max-width: 1366px) and (min-height: 1020px) and (max-height: 1024px) {
     .fourCards {
       position: relative;
       top: -2.5em;
       }
     .container {
-      top: 8em;
+      top: 12em;
     }
     .fSide img,.bSide img {
       width: 300px;
@@ -370,16 +609,15 @@ button {
       margin: 0 auto;
     }
     .upperCards {
-      padding-bottom: 1.5%;
+      padding-bottom: 10%;
   }
   .container button {
     width: 300px;
-    margin: 2em;
+    margin: 0 3em;
     padding: 0;
-    background-color: white;
   }
   .shuffleBtn {
-    top: 1em; 
+    top: 5em; 
     width: 8em;
     padding: .8em;
     font-size: 1.5em;
@@ -406,3 +644,61 @@ button {
   }
     }
   
+  /* Macbook Pro High Res card */
+  @media only screen and (min-width: 1441px) and (max-width: 1680px) {
+      .fourCards {
+        position: relative;
+        top: -1em;
+        }
+      .container {
+        top: 8em;
+      }
+      .upperCards, .lowerCards {
+        width: auto;
+        margin: 0 auto;
+      }
+      .upperCards {
+        padding-bottom: 2%;
+    }
+    .container button {
+      margin: 3em;
+      padding: 0;
+    }
+    .Home p {
+      border-radius: 30px;
+      width: 7em;
+    }
+    .shuffleBtn {
+      top: 2em; 
+      width: 7em;
+      padding: .8em;
+      font-size: 1.5em;
+      border-radius: 30px;
+    }
+    .homeBtn {
+      font-size: 2em;
+    }
+    #nutritionInfo img{
+      position: absolute;
+      top: 10em;
+      left: -218px;
+      text-align: unset;
+      width: 450px;
+    }
+    .bm-burger-button {
+      width: 4em;
+      top: 5em;
+      right: 3.5em;
+    }
+    .bm-menu-wrap {
+      position: fixed;
+      top: 0%;
+    }
+    #nutritionInfo img{
+      position: absolute;
+      top: 2em;
+      left: -127px;
+      text-align: unset;
+      width: 400px;
+    } 
+      }
